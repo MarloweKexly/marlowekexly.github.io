@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
-<body bgcolor="#E6E6FA">
-Hello world!
+<body style="background-color:#00000;">
+ Text
 </body>
 </html>

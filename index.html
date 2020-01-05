@@ -1,58 +1,77 @@
 <html>
-
 <head>
-<meta content="en-ca" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>MAXWRY</title>
-<style type="text/css">
-.auto-style1 {
-	border: 2px solid #FFFFFF;
-	margin-top: 74px;
-	background-image: url('../Downloads/bgsource.jpg');
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-.auto-style2 {
-	color: #FFFFFF;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	background-color: #000000;
-	background-image: url('bg.gif');
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
 }
-.auto-style4 {
-	font-family: "Courier New";
-	font-size: xx-large;
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
-.auto-style5 {
-	font-family: "Courier New";
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }
 </style>
 </head>
+<body>
 
-<body style="background-color: #000000">
+<video autoplay muted loop id="myVideo">
+  <source src="VeraLynnWellMeetAgainDrStrangeloveEndingUpdated.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-<table align="center" cellpadding="0" cellspacing="0" class="auto-style1" style="width: 50%; height: 550px">
-	<tr>
-		<td class="auto-style2"><span class="auto-style4">MAXWRY.NET</span><br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<span class="auto-style5"><br />
-		Welcome</span><br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		<br class="auto-style5" />
-		</td>
-	</tr>
-</table>
+<div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 
 </body>
-
 </html>
-

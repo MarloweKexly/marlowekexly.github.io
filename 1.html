@@ -1,7 +1,14 @@
 <html>
 <head>
-<style>
-  a:link {
+  <style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+a:link {
   background-color: white;
 }
   a:link {
@@ -30,23 +37,16 @@ a:link {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }  
-  <div class="center">
-    <p><a href="2.html">maxwry</a></p>
-</div>
-  </style>
-  <style>
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
 </style>
 </head>
 <body>
 <video autoplay loop id="myVideo">
   <source src="Strangelove1c.mp4" type="video/mp4">
 </video>
+<div class="content">
+  <div class="center">
+    <p><a href="2.html">maxwry</a></p>
+</div>
+</div>
 </body>
 </html>
